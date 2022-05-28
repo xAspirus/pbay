@@ -12,6 +12,7 @@ def get_magnetlink(name: str, info_hash: str) -> str:
 		"udp://tracker.pirateparty.gr:6969/announce",
 		"udp://tracker.cyberia.is:6969/announce",
 	]
+	# magnetlink to redirect open to web browser
 	return f'magnet:?xt=urn:btih:{info_hash}&dn={name}&tr={"&tr=".join(trackers)}'
 
 
