@@ -49,7 +49,7 @@ def search(search_query: str, fmt: str, no_wrap: bool, count: int):
 	'l': lambda t: str(t.leechers),
 	'f': lambda t: str(t.file_count),
 	'u': lambda t: t.username + (f' [blue]({t.status})[/blue]' if t.status != 'member' else ''),
-	'd': lambda t: datetime.fromtimestamp(t.added).strftime('%-d/%-m/%Y')
+	'd': lambda t: datetime.fromtimestamp(t.added).strftime('%d/%m/%Y')
 	}
 	for i in fmt:
 		columns[i]()
