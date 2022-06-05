@@ -38,3 +38,14 @@ Get description and file list of torrent by torrent id (Get this from search).
 `pbay magnetlink [OPTIONS] TORRENT_ID`
 
 Open the magnetlink of torrent by torrent id in a browser window.
+
+## Installation
+
+```
+git clone https://github.com/xAspirus/pbay
+```
+If you use a unix shell, easiest way is to add a alias
+```
+# $RepoLocation is the location where you cloned the repo
+alias pbay "python3 $RepoLocation/pbay"
+```
